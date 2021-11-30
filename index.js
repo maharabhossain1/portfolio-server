@@ -23,11 +23,6 @@ async function run() {
     const database = client.db("portfolio");
     //////////////////////
     const projectsCollections = database.collection("projects");
-    const doc = {
-      title: "Record of a Shriveled Datum",
-      content: "No bytes, no problem. Just insert a document, in MongoDB",
-    };
-    const result = await projectsCollections.insertOne(doc);
 
     // Get API
     app.get("/projects", async (req, res) => {
