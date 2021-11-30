@@ -37,7 +37,6 @@ async function run() {
       const project = await projectsCollections.findOne(query);
       res.send(project);
     });
-    console.log(result);
     console.log("conneted");
   } finally {
     //   await client.close();
